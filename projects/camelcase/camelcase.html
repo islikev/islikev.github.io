@@ -4,21 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Проекты</title>
+    <title>CamelCase</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../index.css" />
-    <link rel="shortcut icon" href="../source/symbols.png" type="image/png" />
-    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="../../index.css" />
+    <link
+      rel="shortcut icon"
+      href="../../source/symbols.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="camelcase.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" href="../index.html"
-        ><img src="../source/symbols.png" alt=""
+      <a class="navbar-brand" href="../../index.html"
+        ><img src="../../source/symbols.png" alt=""
       /></a>
       <button
         class="navbar-toggler collapsed"
@@ -35,15 +39,15 @@
       <div class="navbar-collapse collapse" id="navbarsExample03">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Главная</a>
+            <a class="nav-link" href="../../index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../information/information.html"
+            <a class="nav-link" href="../../information/information.html"
               >Информация</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Проекты</a>
+            <a class="nav-link active" href="../projects.html">Проекты</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -61,14 +65,14 @@
                 href="#"
                 onclick="discord()"
                 title="Скопировать никнейм и хэштег в буфер обмена"
-                ><img src="../source/discord.png" /> Discord</a
+                ><img src="../../source/discord.png" /> Discord</a
               >
               <a
                 class="dropdown-item"
                 href="#"
                 onclick="vk();"
                 title="Скопировать ссылку в буфер обмена"
-                ><img src="../source/vk.png" /> ВКонтакте</a
+                ><img src="../../source/vk.png" /> ВКонтакте</a
               >
 
               <a
@@ -76,38 +80,26 @@
                 href="#"
                 onclick="mail();"
                 title="Скопировать почту в буфер обмена"
-                ><img src="../source/mail.png" /> Почта</a
+                ><img src="../../source/mail.png" /> Почта</a
               >
             </div>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="jumbotron py-4">
-      <div class="container text-center">
-        <h1 class="display-4">Мои проекты</h1>
-
-        <h5>
-          Это страница с моими проектами. <br />
-          Здесь находятся мои программы и проекты которые когда-либо пригодились
-          мне в жизни. Здесь не будет всякой чепухи по типу онлайн калькулятора
-          или змейки, здесь только проекты которые когда-либо понадобились мне.
-        </h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 text-center container">
-        <img src="../source/camel.png" alt="" />
-        <h2>CamelCase</h2>
-        <p class="lead">
-          Данный онлайн-проект переделывает весь текст который Вы ввели в поле
-          по примеру: <br />
-          <span class="bold">"helloworld" => "HeLlOwOrLd"</span>
-        </p>
-        <p>
-          <a class="btn btn-primary" href="camelcase/camelcase.html" role="button">CamelCase</a>
-        </p>
-      </div>
+    <div class="container py-4 text-center">
+      <textarea
+        class="form-control"
+        placeholder="Введите текст который хотите переобразовать"
+        id="textarea"
+      ></textarea>
+      <button class="btn btn-primary" type="button" onclick="myTranslate()">
+        <span class="bold">Переобразовать</span>
+      </button>
+      <br />
+      <button class="btn btn-secondary" type="button" onclick="myCopy()">
+        <span class="bold">Скопировать</span>
+      </button>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -124,6 +116,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="../index.js"></script>
+    <script src="camelcase.js"></script>
+    <script src="../../index.js"></script>
   </body>
 </html>
