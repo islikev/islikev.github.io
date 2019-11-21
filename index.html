@@ -4,142 +4,149 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Главная</title>
+    <title>Портфолио</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="source/symbols.png" type="image/png" />
+    <link rel="stylesheet" href="source/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"
-        ><img src="source/symbols.png" alt=""
-      /></a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">slike</a>
       <button
         class="navbar-toggler collapsed"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarsExample03"
-        aria-controls="navbarsExample03"
+        data-target="#navbarsExample04"
+        aria-controls="navbarsExample04"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse" id="navbarsExample03">
+      <div class="navbar-collapse collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Главная</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="information/information.html"
-              >Информация</a
-            >
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects/projects.html">Проекты</a>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
-              id="dropdown07"
+              id="dropdown04"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              >Контакты</a
+              >Contacts</a
             >
-            <div class="dropdown-menu" aria-labelledby="dropdown07">
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="discord()"
-                title="Скопировать никнейм и хэштег в буфер обмена"
-                ><img src="source/discord.png" /> Discord</a
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="#" title="Copy to clipboard"
+                ><img src="resources/discord.png" alt="" /> Discord</a
               >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="vk();"
-                title="Скопировать ссылку в буфер обмена"
-                ><img src="source/vk.png" /> ВКонтакте</a
-              >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="mail();"
-                title="Скопировать почту в буфер обмена"
-                ><img src="source/mail.png" /> Почта</a
+              <a class="dropdown-item" href="#" title="Copy to clipboard"
+                ><img src="resources/mail.png" alt="" /> Mail</a
               >
             </div>
           </li>
         </ul>
       </div>
     </nav>
-    <main role="main">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron py-4">
+    <div class="col-12 bg-dark header text-center">
+      <div class="col-12">
+        <h1 class="text-dark head-text text-center">
+          Web designer <br />
+          & Full stack developer
+        </h1>
+      </div>
+      <a href="#about">
+        <img src="resources/arrowdown.png" alt="arrow" class="arrow"
+      /></a>
+    </div>
+    <div class="col-12" id="about">
+      <div class="container text-center about-title">
+        <h1 class="title-text text-dark">About</h1>
+      </div>
+      <div class="col-12 text-center">
         <div class="container text-center">
-          <h1 class="display-4">Hello, world!</h1>
-
-          <h5>
-            Это главная страница сайта. <br />
-            Здесь находится навигация по сайту а так-же информация о разделах на
-            сайте. <br />
-            Перед ознакомлением предлагаю вам послушать песню о
-            программировании, эта песня часто мотивирует меня а так-же является
-            одной из моих любимых песен: <br />
-          </h5>
-          <audio controls>
-            <source src="source/helloworld.mp3" type="audio/mpeg" />
-            Ваш браузер не поддерживает HTML5
-          </audio>
+          <h3 class="about-text text-dark">
+            My name is Igor and I'm Full stack developer. <br />
+            There is some of my skills:
+          </h3>
+          <div class="container skills">
+            <img src="resources/html5.png" alt="html" />
+            <img src="resources/css-3.png" alt="css" />
+            <img src="resources/bootstrap.png" alt="bootstrap" />
+            <img src="resources/sass.png" alt="sass" style="width: 102px;" />
+            <img src="resources/php.png" alt="php" style="width: 104px;" />
+            <img src="resources/nodejs.png" alt="nodejs" style="width: 95px;" />
+          </div>
+          <a href="#projects">
+            <img src="resources/arrowdown.png" alt="arrow" class="arrow"
+          /></a>
         </div>
       </div>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <h2>Информация</h2>
-            <p class="lead">
-              В этом разделе Вы найдете информацию обо мне, в каких областях я
-              хорошо себя чувствую и какие области мне надо подтянуть, так-же
-              планы на будущее.
-            </p>
-            <p>
-              <a
-                class="btn btn-primary"
-                href="information/information.html"
-                role="button"
-                >Информация</a
-              >
-            </p>
-          </div>
-          <div class="col-md-6 text-center">
-            <h2>Проекты</h2>
-            <p class="lead">
-              В этом разделе моего сайта Вы можете увидеть мои простенькие
-              онлайн проекты.
-            </p>
-            <p>
-              <a
-                class="btn btn-primary"
-                href="projects/projects.html"
-                role="button"
-                >Проекты</a
-              >
-            </p>
-          </div>
-        </div>
-        <hr />
+    </div>
+    <div class="col-12 text-center" id="projects">
+      <div class="container text-center">
+        <h1 class="title-text text-light">Projects</h1>
       </div>
-    </main>
+      <div class="col-12 projectsimg text-center">
+        <img src="resources/projects1.png" class="imgpr" alt="" />
+        <img src="resources/projects2.png" class="imgpr" alt="" />
+        <img src="resources/projects3.png" class="imgpr" alt="" />
+        <img src="resources/projects4.jpg" class="imgpr" alt="" />
+      </div>
+      <a href="#services">
+        <img src="resources/arrowdown.png" alt="arrow" class="arrow"
+      /></a>
+    </div>
+    <div class="container" id="services">
+      <div class="container text-center">
+        <h1 class="title-text text-dark">
+          What can I do?
+        </h1>
+      </div>
+      <div class="row text-center listserv">
+        <div class="col-md-4">
+          <img src="resources/frontend.png" alt="" /><br />
+          <h1 class="text-dark">Frontend</h1>
+          <h3 class="text-dark">
+            I can do front of your website with HTML, CSS, JS and lots of
+            frameworks and libraries like Bootstrap, Sass, etc.
+          </h3>
+        </div>
+        <div class="col-md-4">
+          <img src="resources/backend.png" alt="" /><br />
+          <h1 class="text-dark">Backend</h1>
+          <h3 class="text-dark">
+            I know couple of programming languages to do Server-part of your
+            website with Data Base, Registration, Authorization, etc.
+          </h3>
+        </div>
+        <div class="col-md-4">
+          <img src="resources/smartphone.png" alt="" /><br />
+          <h1 class="text-dark">Adaptive sites</h1>
+          <h3 class="text-dark">
+            I know how to make websites adaptive for PC, Tablets, Mobiles, etc.
+            I will make websites adaptive with Bootstrap, Flex or
+            media-requests. By the way, this website is fully adaptive.
+          </h3>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -155,6 +162,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
   </body>
 </html>
