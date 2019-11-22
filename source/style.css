@@ -13,7 +13,7 @@
 }
 .arrow {
   margin: 25px;
-  width: 36px;
+  width: 45px;
   opacity: 0.75;
 }
 .col-12 {
@@ -25,7 +25,7 @@
 }
 .skills img {
   width: 100px;
-  margin: 5px;
+  margin: 10px;
 }
 .title-text {
   font-weight: 900;
@@ -33,7 +33,7 @@
 .header {
   background: url("/resources/bg.png") #343a40;
   background-size: cover;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .projectsimg {
   margin-top: 40px;
@@ -60,35 +60,28 @@
 .col-md-4 {
   padding: 0;
 }
+.about-title {
+  margin-bottom: 20px;
+}
 #about {
   background: url("/resources/bg.png");
   background-size: cover;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 #projects {
   background: url("/resources/bg.png") #343a40;
   background-size: cover;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 #services {
   background: url("/resources/bg.png");
   background-size: cover;
   padding-top: 60px;
-  padding-bottom: 30px;
-}
-#form {
-  background: url("/resources/bg.png") #343a40;
-  background-size: cover;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
-::placeholder {
-  color: red;
-  opacity: 1; /* Firefox */
-}
 @media screen and (max-width: 2500px) {
   .imgpr {
     width: 1100px;
