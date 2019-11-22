@@ -53,10 +53,18 @@
               >Contacts</a
             >
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="#" title="Copy to clipboard"
+              <a
+                class="dropdown-item"
+                href="#"
+                title="Copy to clipboard"
+                onclick="discord();"
                 ><img src="resources/discord.png" alt="" /> Discord</a
               >
-              <a class="dropdown-item" href="#" title="Copy to clipboard"
+              <a
+                class="dropdown-item"
+                href="#"
+                title="Copy to clipboard"
+                onclick="mail();"
                 ><img src="resources/mail.png" alt="" /> Mail</a
               >
             </div>
@@ -66,7 +74,7 @@
     </nav>
     <div class="col-12 bg-dark header text-center">
       <div class="col-12">
-        <h1 class="text-dark head-text text-center">
+        <h1 class="text-light head-text text-center">
           Web designer <br />
           & Full stack developer
         </h1>
@@ -113,38 +121,93 @@
         <img src="resources/arrowdown.png" alt="arrow" class="arrow"
       /></a>
     </div>
-    <div class="container" id="services">
+    <div class="col-12" id="services">
       <div class="container text-center">
         <h1 class="title-text text-dark">
           What can I do?
         </h1>
       </div>
-      <div class="row text-center listserv">
-        <div class="col-md-4">
-          <img src="resources/frontend.png" alt="" /><br />
-          <h1 class="text-dark">Frontend</h1>
-          <h3 class="text-dark">
-            I can do front of your website with HTML, CSS, JS and lots of
-            frameworks and libraries like Bootstrap, Sass, etc.
-          </h3>
+      <div class="container">
+        <div class="row text-center listserv">
+          <div class="col-md-4">
+            <img src="resources/frontend.png" alt="" /><br />
+            <h1 class="text-dark">Frontend</h1>
+            <h3 class="text-dark">
+              I can do front of your website with HTML, CSS, JS and lots of
+              frameworks and libraries like Bootstrap, Sass, etc.
+            </h3>
+          </div>
+          <div class="col-md-4">
+            <img src="resources/backend.png" alt="" /><br />
+            <h1 class="text-dark">Backend</h1>
+            <h3 class="text-dark">
+              I know couple of programming languages to do Server-part of your
+              website with Data Base, Registration, Authorization, etc.
+            </h3>
+          </div>
+          <div class="col-md-4">
+            <img src="resources/smartphone.png" alt="" /><br />
+            <h1 class="text-dark">Adaptive sites</h1>
+            <h3 class="text-dark">
+              I know how to make websites adaptive for PC, Tablets, Mobiles,
+              etc. I will make websites adaptive with Bootstrap, Flex or
+              media-requests. By the way, this website is fully adaptive.
+            </h3>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="resources/backend.png" alt="" /><br />
-          <h1 class="text-dark">Backend</h1>
-          <h3 class="text-dark">
-            I know couple of programming languages to do Server-part of your
-            website with Data Base, Registration, Authorization, etc.
-          </h3>
-        </div>
-        <div class="col-md-4">
-          <img src="resources/smartphone.png" alt="" /><br />
-          <h1 class="text-dark">Adaptive sites</h1>
-          <h3 class="text-dark">
-            I know how to make websites adaptive for PC, Tablets, Mobiles, etc.
-            I will make websites adaptive with Bootstrap, Flex or
-            media-requests. By the way, this website is fully adaptive.
-          </h3>
-        </div>
+      </div>
+      <div class="container text-center">
+        <a href="#form">
+          <img src="resources/arrowdown.png" alt="arrow" class="arrow"
+        /></a>
+      </div>
+    </div>
+    <div id="form" class="col-12 text-center">
+      <div class="container">
+        <form action="/source/feedback.php" method="POST">
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="text-light">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Alex"
+              name="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="text-light">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+              name="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="text-light">Subject</label>
+            <input
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              placeholder="Subject of message"
+              name="subject"
+            ></input>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="text-light">Message</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Your message"
+              name="message"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Send"  class="btn btn-primary mb-2">
+          </div>
+        </form>
       </div>
     </div>
     <script
@@ -162,5 +225,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="/source/main.js"></script>
   </body>
 </html>
