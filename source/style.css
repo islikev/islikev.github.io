@@ -50,11 +50,11 @@
   width: 50px;
   opacity: 0.8;
 }
-.listserv h1 {
+.listserv h2 {
   font-weight: 900;
   margin-top: 15px;
 }
-.listserv h3 {
+.listserv h4 {
   margin: 20px;
 }
 .col-md-4 {
