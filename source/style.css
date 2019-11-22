@@ -14,7 +14,7 @@
 .arrow {
   margin: 25px;
   width: 45px;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 .col-12 {
   padding: 0px;
@@ -25,14 +25,13 @@
 }
 .skills img {
   width: 100px;
-  margin: 10px;
+  margin: 5px;
 }
 .title-text {
   font-weight: 900;
 }
 .header {
-  background: url("/resources/bg.png") #343a40;
-  background-size: cover;
+  background: url("/resources/bg2.png");
   padding-bottom: 40px;
 }
 .projectsimg {
@@ -49,6 +48,7 @@
 }
 .listserv img {
   width: 50px;
+  opacity: 0.8;
 }
 .listserv h1 {
   font-weight: 900;
@@ -65,21 +65,23 @@
 }
 #about {
   background: url("/resources/bg.png");
-  background-size: cover;
   padding-top: 60px;
   padding-bottom: 40px;
 }
 #projects {
-  background: url("/resources/bg.png") #343a40;
-  background-size: cover;
+  background: url("/resources/bg2.png");
   padding-top: 60px;
   padding-bottom: 40px;
 }
 #services {
   background: url("/resources/bg.png");
-  background-size: cover;
+  filter: grayscale();
   padding-top: 60px;
   padding-bottom: 40px;
+}
+
+.imgpr {
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 2500px) {
