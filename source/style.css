@@ -3,6 +3,9 @@
   font-family: Montserrat;
   scroll-behavior: smooth;
 }
+body {
+  background: url("/resources/bg2.png");
+}
 .head-text {
   padding: 40px;
   font-weight: 900;
@@ -31,7 +34,6 @@
   font-weight: 900;
 }
 .header {
-  background: url("/resources/bg2.png");
   padding-bottom: 40px;
 }
 .projectsimg {
@@ -64,18 +66,16 @@
   margin-bottom: 20px;
 }
 #about {
-  background: url("/resources/bg.png");
+  background: rgba(255, 255, 255, 0.5);
   padding-top: 60px;
   padding-bottom: 40px;
 }
 #projects {
-  background: url("/resources/bg2.png");
   padding-top: 60px;
   padding-bottom: 40px;
 }
 #services {
-  background: url("/resources/bg.png");
-  filter: grayscale();
+  background: rgba(255, 255, 255, 0.55);
   padding-top: 60px;
   padding-bottom: 40px;
 }
